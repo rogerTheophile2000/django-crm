@@ -30,6 +30,9 @@
         </div>
     </div>
     <a href="{% url 'home' %}" class="btn btn-secondary mt-4">Back Home</a>
-    <a href="{% url 'delete_record' customer_record.id %}" class="btn btn-danger ms-4 mt-4">Delete</a>
+    
+    <a href="{% url 'delete_record' customer_record.id %}" class="btn btn-danger ms-4 mt-4">Delete Record</a>
+    
+    <a href="{% url 'update_record' customer_record.id %}" class="btn btn-primary ms-4 mt-4">Update Record</a>
 </div>
 {% endblock content %}
